@@ -118,7 +118,7 @@ let array = phrase.split(" ");
 for (let count = 0; count<array.length; count++){
     let arraytwo = array[count].split("");
     arraytwo.push(arraytwo.shift());
-    let pig = arraytwo.join("");
+    let pig = arraytwo.join("")+"ay";
     console.log(pig);
 }
 
@@ -126,7 +126,7 @@ return pigLatin;
 
 }
 
-console.log(pigLatin('good day'));
+console.log(pigLatin('come now'));
 
 //      07 | longestWord
 //      Write a function called longestWord that takes a single string and returns the longest word in the string.
