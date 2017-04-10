@@ -321,7 +321,6 @@ return countLetters;
 
 console.log(hamming("Three", "Three"));   
 
-
 //      14 | pokemon
 //      Write a function called pokemon that accepts an array of numbers. Each element in the array represents a day, 
 //      and the number represents the number of Pokemon caught on that day. Return an array of the same length that 
@@ -346,5 +345,25 @@ return arrayCap;
 }
 
 console.log(pokemon([1, 2, 5, 1, 3]));
+
+//      15 | find
+//      Write a function called find that accepts two parameters: the first is an array of numbers and the 
+//      second is a single number. Return the index of the first time you find the second parameter in the first parameter.
+
+console.log("                                                   ")
+console.log("---   15  | find   --------------------------------");
+console.log("                                                   ")
+
+function find(array, num) {
+
+    for (let count = 0; count < array.length; count++){
+        if (num === array[count]) {
+            return count;
+        }
+    }
+
+}
+
+console.log(find([10, 6, 45], 6));
 
 
